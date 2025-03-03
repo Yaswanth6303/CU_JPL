@@ -45,12 +45,33 @@ public class ReverseList {
 		// Return the manually reversed list.
 		return reverseList;
 	}
+	/**
+	 * Takes a integer as input
+	 * Time Complexity : O(n)
+	 * Space Complexity : O(n)
+	 * @param list the input list of integers
+	 */
+	public static void reverseListMethod_3(List<Integer> list) {
+		int i = 0;
+		int j = list.size() - 1;
+		
+		while (i < j) {
+			Integer tempInteger = Integer.valueOf(list.get(i));
+			list.set(i, list.get(j));
+			list.set(j, tempInteger);
+			i++;
+			j--;
+		}
+ 	}
 	public static void main(String[] args) {
 		List<Integer> list = Arrays.asList(1, 2, 3, 4, 5);
 		System.out.print("Reversed List using Inbulit Method: ");
 		System.out.println(reverseListMethod_1(list));
 		System.out.print("Reversed List Manually: ");
 		System.out.println(reverseListMethod_2(list));
+		System.out.print("Reversed List: ");
+		reverseListMethod_3(list);
+		System.out.println(list);
 	}
 }
 
