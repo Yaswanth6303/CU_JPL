@@ -1,0 +1,64 @@
+# Java build output
+target/
+*.jar
+*.war
+*.ear
+*.class
+
+# Build tools
+# Maven
+.mvn/
+**/pom.xml.tag
+**/pom.xml.releaseBackup
+**/pom.xml.versionsBackup
+**/pom.xml.next
+**/release.properties
+**/dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# Gradle
+.gradle/
+build/
+**/build/
+gradle-app.setting
+gradle-wrapper.jar
+gradle-wrapper.properties
+gradlew
+gradlew.bat
+
+# Eclipse specific
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# IntelliJ IDEA specific
+.idea/
+*.iml
+*.iws
+out/
+
+# Node modules (if using JavaScript/TypeScript)
+node_modules/
+
+# Logs and OS files
+*.log
+.DS_Store
+Thumbs.db
