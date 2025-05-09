@@ -9,7 +9,6 @@ public class ReverseNumber {
 	 * Space Complexity: O(1) → Constant space is used regardless of the input size.
 	 */
 	public static Integer reverseInteger(Integer number) {
-		// Check if the number is negative and make it positive for processing
 		boolean isNegative = number < 0;
 		if (isNegative) {
 			number = -number;
@@ -17,19 +16,16 @@ public class ReverseNumber {
 		
 		Integer reverseNumber = 0;
 
-		// Loop through each digit of the number
 		while (number > 0) {
-			int lastDigit = number % 10; // Extract the last digit
-			reverseNumber = (reverseNumber * 10) + lastDigit; // Append digit to reversed number
-			number /= 10; // Remove last digit from original number
+			int lastDigit = number % 10; 
+			reverseNumber = (reverseNumber * 10) + lastDigit; 
+			number /= 10; 
 		}
 		
-		// Restore the negative sign if the original number was negative
 		return isNegative ? -reverseNumber : reverseNumber;
 	}
 
 	public static void main(String[] args) {
-		// Test cases
 		System.out.println(reverseInteger(123));  
 		System.out.println(reverseInteger(-456)); 
 		System.out.println(reverseInteger(100));  

@@ -55,7 +55,7 @@ public class OldBookShelf {
 				books.add(book);
 			}
 		}
-		return books.toArray(new Book[10]);
+		return books.toArray(new Book[0]);
 	}
 
 }
